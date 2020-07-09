@@ -1,0 +1,19 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /PhoneBookApp
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: hbstudent
+    url: jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false&amp
+    username: hbstudent
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
